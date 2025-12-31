@@ -1,0 +1,198 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #1c1c1c;
+  color: #8d8d8d;
+  font-family: sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+main {
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 600px;
+}
+
+h1 {
+  margin-bottom: 20px;
+}
+
+table {
+  margin-bottom: 50px;
+}
+
+.buttons {
+  display: inline;
+  text-align: center;
+  margin: 20px 10px;
+}
+
+.buttons button {
+  margin: 2px 5px;
+}
+
+button {
+  background-color: #333333;
+  color: #ffffff;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  text-transform: uppercase;
+  transition: 0.2s;
+}
+
+button:hover {
+  box-shadow: 0px 0px 20px #4e4e4e;
+}
+
+td {
+  --size: 20px;
+  width: var(--size);
+  height: var(--size);
+  display: flex;
+  border: 1px solid #2c2c2c;
+  align-items: center;
+  justify-content: center;
+}
+
+tr {
+  display: flex;
+}
+
+#edit-button {
+  margin-bottom: 10px;
+}
+
+input[type="date"] {
+  background: none;
+  border: none;
+}
+
+::-webkit-datetime-edit {
+  display: none;
+}
+::-webkit-calendar-picker-indicator {
+  filter: invert();
+  border: none;
+  padding: 0;
+  margin: 0;
+}
+::-webkit-calendar-picker-indicator:hover {
+  cursor: pointer;
+  box-shadow: 0px 0px 20px #4e4e4e;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+#close-button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background-color: #ff4d4d;
+  padding: 5px 10px;
+}
+
+.modal-content {
+  cursor: default;
+  background-color: #2c2c2c;
+  padding: 20px;
+  border-radius: 5px;
+  text-align: center;
+  position: relative;
+}
+
+.variant {
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  gap: 10px;
+  margin: 10px 0;
+}
+
+.color-indicator {
+  width: 30px;
+  height: 30px;
+}
+
+.remove-button {
+  background-color: #ff4d4d;
+  padding: 5px 10px;
+}
+
+.add-variant {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 10px;
+  margin-bottom: 5px;
+}
+
+input[type="text"] {
+  background: none;
+  border: 1px solid #555555;
+  padding: 5px;
+  color: #ffffff;
+}
+
+input[type="color"] {
+  background: none;
+  border: none;
+  padding: 0;
+  margin: 0;
+  cursor: pointer;
+}
+
+.error-text {
+  color: #ff4d4d;
+  margin-bottom: 10px;
+}
+
+.warning-modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  align-items: center;
+  justify-content: center;
+}
+
+.warning-modal-content {
+  background-color: #2c2c2c;
+  padding: 20px;
+  border-radius: 5px;
+  text-align: center;
+  position: relative;
+  margin: 8px;
+}
+
+.warning-modal-content p {
+  margin: 20px 0;
+}
+
+#confirm-delete-button {
+  background-color: #ff4d4d;
+  margin-right: 5px;
+}

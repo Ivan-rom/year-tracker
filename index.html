@@ -1,0 +1,572 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Year Tracker</title>
+  </head>
+  <body>
+    <main>
+      <h1>Year Tracker</h1>
+
+      <h2>
+        How is your day <span id="date-to-change">today</span
+        ><input type="date" name="date" id="date" />?
+      </h2>
+
+      <div class="buttons" id="buttons-container"></div>
+      <button id="edit-button">Edit variants</button>
+
+      <div class="year">
+        <h2>Year Overview</h2>
+        <table>
+          <tr>
+            <td></td>
+            <td>1</td>
+            <td>2</td>
+            <td>3</td>
+            <td>4</td>
+            <td>5</td>
+            <td>6</td>
+            <td>7</td>
+            <td>8</td>
+            <td>9</td>
+            <td>10</td>
+            <td>11</td>
+            <td>12</td>
+          </tr>
+          <tr>
+            <td>1</td>
+            <td id="1-1"></td>
+            <td id="2-1"></td>
+            <td id="3-1"></td>
+            <td id="4-1"></td>
+            <td id="5-1"></td>
+            <td id="6-1"></td>
+            <td id="7-1"></td>
+            <td id="8-1"></td>
+            <td id="9-1"></td>
+            <td id="10-1"></td>
+            <td id="11-1"></td>
+            <td id="12-1"></td>
+          </tr>
+
+          <tr>
+            <td>2</td>
+            <td id="1-2"></td>
+            <td id="2-2"></td>
+            <td id="3-2"></td>
+            <td id="4-2"></td>
+            <td id="5-2"></td>
+            <td id="6-2"></td>
+            <td id="7-2"></td>
+            <td id="8-2"></td>
+            <td id="9-2"></td>
+            <td id="10-2"></td>
+            <td id="11-2"></td>
+            <td id="12-2"></td>
+          </tr>
+
+          <tr>
+            <td>3</td>
+            <td id="1-3"></td>
+            <td id="2-3"></td>
+            <td id="3-3"></td>
+            <td id="4-3"></td>
+            <td id="5-3"></td>
+            <td id="6-3"></td>
+            <td id="7-3"></td>
+            <td id="8-3"></td>
+            <td id="9-3"></td>
+            <td id="10-3"></td>
+            <td id="11-3"></td>
+            <td id="12-3"></td>
+          </tr>
+
+          <tr>
+            <td>4</td>
+            <td id="1-4"></td>
+            <td id="2-4"></td>
+            <td id="3-4"></td>
+            <td id="4-4"></td>
+            <td id="5-4"></td>
+            <td id="6-4"></td>
+            <td id="7-4"></td>
+            <td id="8-4"></td>
+            <td id="9-4"></td>
+            <td id="10-4"></td>
+            <td id="11-4"></td>
+            <td id="12-4"></td>
+          </tr>
+
+          <tr>
+            <td>5</td>
+            <td id="1-5"></td>
+            <td id="2-5"></td>
+            <td id="3-5"></td>
+            <td id="4-5"></td>
+            <td id="5-5"></td>
+            <td id="6-5"></td>
+            <td id="7-5"></td>
+            <td id="8-5"></td>
+            <td id="9-5"></td>
+            <td id="10-5"></td>
+            <td id="11-5"></td>
+            <td id="12-5"></td>
+          </tr>
+
+          <tr>
+            <td>6</td>
+            <td id="1-6"></td>
+            <td id="2-6"></td>
+            <td id="3-6"></td>
+            <td id="4-6"></td>
+            <td id="5-6"></td>
+            <td id="6-6"></td>
+            <td id="7-6"></td>
+            <td id="8-6"></td>
+            <td id="9-6"></td>
+            <td id="10-6"></td>
+            <td id="11-6"></td>
+            <td id="12-6"></td>
+          </tr>
+
+          <tr>
+            <td>7</td>
+            <td id="1-7"></td>
+            <td id="2-7"></td>
+            <td id="3-7"></td>
+            <td id="4-7"></td>
+            <td id="5-7"></td>
+            <td id="6-7"></td>
+            <td id="7-7"></td>
+            <td id="8-7"></td>
+            <td id="9-7"></td>
+            <td id="10-7"></td>
+            <td id="11-7"></td>
+            <td id="12-7"></td>
+          </tr>
+
+          <tr>
+            <td>8</td>
+            <td id="1-8"></td>
+            <td id="2-8"></td>
+            <td id="3-8"></td>
+            <td id="4-8"></td>
+            <td id="5-8"></td>
+            <td id="6-8"></td>
+            <td id="7-8"></td>
+            <td id="8-8"></td>
+            <td id="9-8"></td>
+            <td id="10-8"></td>
+            <td id="11-8"></td>
+            <td id="12-8"></td>
+          </tr>
+
+          <tr>
+            <td>9</td>
+            <td id="1-9"></td>
+            <td id="2-9"></td>
+            <td id="3-9"></td>
+            <td id="4-9"></td>
+            <td id="5-9"></td>
+            <td id="6-9"></td>
+            <td id="7-9"></td>
+            <td id="8-9"></td>
+            <td id="9-9"></td>
+            <td id="10-9"></td>
+            <td id="11-9"></td>
+            <td id="12-9"></td>
+          </tr>
+
+          <tr>
+            <td>10</td>
+            <td id="1-10"></td>
+            <td id="2-10"></td>
+            <td id="3-10"></td>
+            <td id="4-10"></td>
+            <td id="5-10"></td>
+            <td id="6-10"></td>
+            <td id="7-10"></td>
+            <td id="8-10"></td>
+            <td id="9-10"></td>
+            <td id="10-10"></td>
+            <td id="11-10"></td>
+            <td id="12-10"></td>
+          </tr>
+
+          <tr>
+            <td>11</td>
+            <td id="1-11"></td>
+            <td id="2-11"></td>
+            <td id="3-11"></td>
+            <td id="4-11"></td>
+            <td id="5-11"></td>
+            <td id="6-11"></td>
+            <td id="7-11"></td>
+            <td id="8-11"></td>
+            <td id="9-11"></td>
+            <td id="10-11"></td>
+            <td id="11-11"></td>
+            <td id="12-11"></td>
+          </tr>
+
+          <tr>
+            <td>12</td>
+            <td id="1-12"></td>
+            <td id="2-12"></td>
+            <td id="3-12"></td>
+            <td id="4-12"></td>
+            <td id="5-12"></td>
+            <td id="6-12"></td>
+            <td id="7-12"></td>
+            <td id="8-12"></td>
+            <td id="9-12"></td>
+            <td id="10-12"></td>
+            <td id="11-12"></td>
+            <td id="12-12"></td>
+          </tr>
+
+          <tr>
+            <td>13</td>
+            <td id="1-13"></td>
+            <td id="2-13"></td>
+            <td id="3-13"></td>
+            <td id="4-13"></td>
+            <td id="5-13"></td>
+            <td id="6-13"></td>
+            <td id="7-13"></td>
+            <td id="8-13"></td>
+            <td id="9-13"></td>
+            <td id="10-13"></td>
+            <td id="11-13"></td>
+            <td id="12-13"></td>
+          </tr>
+
+          <tr>
+            <td>14</td>
+            <td id="1-14"></td>
+            <td id="2-14"></td>
+            <td id="3-14"></td>
+            <td id="4-14"></td>
+            <td id="5-14"></td>
+            <td id="6-14"></td>
+            <td id="7-14"></td>
+            <td id="8-14"></td>
+            <td id="9-14"></td>
+            <td id="10-14"></td>
+            <td id="11-14"></td>
+            <td id="12-14"></td>
+          </tr>
+
+          <tr>
+            <td>15</td>
+            <td id="1-15"></td>
+            <td id="2-15"></td>
+            <td id="3-15"></td>
+            <td id="4-15"></td>
+            <td id="5-15"></td>
+            <td id="6-15"></td>
+            <td id="7-15"></td>
+            <td id="8-15"></td>
+            <td id="9-15"></td>
+            <td id="10-15"></td>
+            <td id="11-15"></td>
+            <td id="12-15"></td>
+          </tr>
+
+          <tr>
+            <td>16</td>
+            <td id="1-16"></td>
+            <td id="2-16"></td>
+            <td id="3-16"></td>
+            <td id="4-16"></td>
+            <td id="5-16"></td>
+            <td id="6-16"></td>
+            <td id="7-16"></td>
+            <td id="8-16"></td>
+            <td id="9-16"></td>
+            <td id="10-16"></td>
+            <td id="11-16"></td>
+            <td id="12-16"></td>
+          </tr>
+
+          <tr>
+            <td>17</td>
+            <td id="1-17"></td>
+            <td id="2-17"></td>
+            <td id="3-17"></td>
+            <td id="4-17"></td>
+            <td id="5-17"></td>
+            <td id="6-17"></td>
+            <td id="7-17"></td>
+            <td id="8-17"></td>
+            <td id="9-17"></td>
+            <td id="10-17"></td>
+            <td id="11-17"></td>
+            <td id="12-17"></td>
+          </tr>
+
+          <tr>
+            <td>18</td>
+            <td id="1-18"></td>
+            <td id="2-18"></td>
+            <td id="3-18"></td>
+            <td id="4-18"></td>
+            <td id="5-18"></td>
+            <td id="6-18"></td>
+            <td id="7-18"></td>
+            <td id="8-18"></td>
+            <td id="9-18"></td>
+            <td id="10-18"></td>
+            <td id="11-18"></td>
+            <td id="12-18"></td>
+          </tr>
+
+          <tr>
+            <td>19</td>
+            <td id="1-19"></td>
+            <td id="2-19"></td>
+            <td id="3-19"></td>
+            <td id="4-19"></td>
+            <td id="5-19"></td>
+            <td id="6-19"></td>
+            <td id="7-19"></td>
+            <td id="8-19"></td>
+            <td id="9-19"></td>
+            <td id="10-19"></td>
+            <td id="11-19"></td>
+            <td id="12-19"></td>
+          </tr>
+
+          <tr>
+            <td>20</td>
+            <td id="1-20"></td>
+            <td id="2-20"></td>
+            <td id="3-20"></td>
+            <td id="4-20"></td>
+            <td id="5-20"></td>
+            <td id="6-20"></td>
+            <td id="7-20"></td>
+            <td id="8-20"></td>
+            <td id="9-20"></td>
+            <td id="10-20"></td>
+            <td id="11-20"></td>
+            <td id="12-20"></td>
+          </tr>
+
+          <tr>
+            <td>21</td>
+            <td id="1-21"></td>
+            <td id="2-21"></td>
+            <td id="3-21"></td>
+            <td id="4-21"></td>
+            <td id="5-21"></td>
+            <td id="6-21"></td>
+            <td id="7-21"></td>
+            <td id="8-21"></td>
+            <td id="9-21"></td>
+            <td id="10-21"></td>
+            <td id="11-21"></td>
+            <td id="12-21"></td>
+          </tr>
+
+          <tr>
+            <td>22</td>
+            <td id="1-22"></td>
+            <td id="2-22"></td>
+            <td id="3-22"></td>
+            <td id="4-22"></td>
+            <td id="5-22"></td>
+            <td id="6-22"></td>
+            <td id="7-22"></td>
+            <td id="8-22"></td>
+            <td id="9-22"></td>
+            <td id="10-22"></td>
+            <td id="11-22"></td>
+            <td id="12-22"></td>
+          </tr>
+
+          <tr>
+            <td>23</td>
+            <td id="1-23"></td>
+            <td id="2-23"></td>
+            <td id="3-23"></td>
+            <td id="4-23"></td>
+            <td id="5-23"></td>
+            <td id="6-23"></td>
+            <td id="7-23"></td>
+            <td id="8-23"></td>
+            <td id="9-23"></td>
+            <td id="10-23"></td>
+            <td id="11-23"></td>
+            <td id="12-23"></td>
+          </tr>
+
+          <tr>
+            <td>24</td>
+            <td id="1-24"></td>
+            <td id="2-24"></td>
+            <td id="3-24"></td>
+            <td id="4-24"></td>
+            <td id="5-24"></td>
+            <td id="6-24"></td>
+            <td id="7-24"></td>
+            <td id="8-24"></td>
+            <td id="9-24"></td>
+            <td id="10-24"></td>
+            <td id="11-24"></td>
+            <td id="12-24"></td>
+          </tr>
+
+          <tr>
+            <td>25</td>
+            <td id="1-25"></td>
+            <td id="2-25"></td>
+            <td id="3-25"></td>
+            <td id="4-25"></td>
+            <td id="5-25"></td>
+            <td id="6-25"></td>
+            <td id="7-25"></td>
+            <td id="8-25"></td>
+            <td id="9-25"></td>
+            <td id="10-25"></td>
+            <td id="11-25"></td>
+            <td id="12-25"></td>
+          </tr>
+
+          <tr>
+            <td>26</td>
+            <td id="1-26"></td>
+            <td id="2-26"></td>
+            <td id="3-26"></td>
+            <td id="4-26"></td>
+            <td id="5-26"></td>
+            <td id="6-26"></td>
+            <td id="7-26"></td>
+            <td id="8-26"></td>
+            <td id="9-26"></td>
+            <td id="10-26"></td>
+            <td id="11-26"></td>
+            <td id="12-26"></td>
+          </tr>
+
+          <tr>
+            <td>27</td>
+            <td id="1-27"></td>
+            <td id="2-27"></td>
+            <td id="3-27"></td>
+            <td id="4-27"></td>
+            <td id="5-27"></td>
+            <td id="6-27"></td>
+            <td id="7-27"></td>
+            <td id="8-27"></td>
+            <td id="9-27"></td>
+            <td id="10-27"></td>
+            <td id="11-27"></td>
+            <td id="12-27"></td>
+          </tr>
+
+          <tr>
+            <td>28</td>
+            <td id="1-28"></td>
+            <td id="2-28"></td>
+            <td id="3-28"></td>
+            <td id="4-28"></td>
+            <td id="5-28"></td>
+            <td id="6-28"></td>
+            <td id="7-28"></td>
+            <td id="8-28"></td>
+            <td id="9-28"></td>
+            <td id="10-28"></td>
+            <td id="11-28"></td>
+            <td id="12-28"></td>
+          </tr>
+
+          <tr>
+            <td>29</td>
+            <td id="1-29"></td>
+            <td id="2-29"></td>
+            <td id="3-29"></td>
+            <td id="4-29"></td>
+            <td id="5-29"></td>
+            <td id="6-29"></td>
+            <td id="7-29"></td>
+            <td id="8-29"></td>
+            <td id="9-29"></td>
+            <td id="10-29"></td>
+            <td id="11-29"></td>
+            <td id="12-29"></td>
+          </tr>
+
+          <tr>
+            <td>30</td>
+            <td id="1-30"></td>
+            <td id="2-30"></td>
+            <td id="3-30"></td>
+            <td id="4-30"></td>
+            <td id="5-30"></td>
+            <td id="6-30"></td>
+            <td id="7-30"></td>
+            <td id="8-30"></td>
+            <td id="9-30"></td>
+            <td id="10-30"></td>
+            <td id="11-30"></td>
+            <td id="12-30"></td>
+          </tr>
+
+          <tr>
+            <td>31</td>
+            <td id="1-31"></td>
+            <td id="2-31"></td>
+            <td id="3-31"></td>
+            <td id="4-31"></td>
+            <td id="5-31"></td>
+            <td id="6-31"></td>
+            <td id="7-31"></td>
+            <td id="8-31"></td>
+            <td id="9-31"></td>
+            <td id="10-31"></td>
+            <td id="11-31"></td>
+            <td id="12-31"></td>
+          </tr>
+        </table>
+      </div>
+
+      <div class="modal" id="modal">
+        <div class="modal-content">
+          <h2>Edit Variants</h2>
+          <div id="variants"></div>
+          <div class="add-variant">
+            <input
+              type="text"
+              name="add-name"
+              id="add-name"
+              placeholder="Button name" />
+
+            <input type="color" name="add-color" id="add-color" />
+          </div>
+          <div class="error-text"></div>
+          <button id="add-variant-button">Add Variant</button>
+
+          <button id="close-button">✕</button>
+        </div>
+      </div>
+
+      <div class="warning-modal" id="warning-modal">
+        <div class="warning-modal-content">
+          <h2>Warning</h2>
+          <p>
+            This variant is used in your tracker. Deleting it will remove it
+            from all days where it was used. Are you sure you want to delete it?
+          </p>
+          <button id="confirm-delete-button">Delete</button>
+          <button id="cancel-delete-button">Cancel</button>
+        </div>
+      </div>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
