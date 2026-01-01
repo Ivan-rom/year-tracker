@@ -133,7 +133,14 @@ function getVariants() {
     indicator.classList.add("color-indicator");
 
     indicator.addEventListener("input", (e) => {
-      colors[currentKey] = e.target.value;
+      updateButton.style.display = "block";
+    });
+
+    const updateButton = document.createElement("button");
+    updateButton.textContent = "Update Color";
+    updateButton.className = "update-button";
+    updateButton.addEventListener("click", () => {
+      colors[currentKey] = indicator.value;
       localStorage.setItem("colors", JSON.stringify(colors));
       buttonsContainer.innerHTML = "";
       buttonsContainer.append(...getButtons());
@@ -152,6 +159,7 @@ function getVariants() {
     const variant = document.createElement("div");
     variant.classList.add("variant");
     variant.appendChild(indicator);
+    variant.appendChild(updateButton);
     variant.appendChild(name);
     variant.appendChild(removeButton);
 
